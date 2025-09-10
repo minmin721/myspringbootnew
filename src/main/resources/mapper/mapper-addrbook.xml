@@ -31,7 +31,7 @@
 	<delete id="deleteDB" parameterType="int">
 		delete from addrbook where ab_id = #{abId}
 	</delete>
-	<update id="updateDB" parameterType="int">
+	<update id="updateDB" parameterType="lx.edu.springboot.vo.AddrBookVO">
 		 update addrbook
 			set ab_name = #{abName}
 				, ab_email = #{abEmail}

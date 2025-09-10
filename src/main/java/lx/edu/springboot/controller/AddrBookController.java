@@ -60,9 +60,9 @@ public class AddrBookController {
 	}
 	
 	@RequestMapping("update.do")
-	public String update(@RequestParam("abId") int abId) throws Exception {
-		dao.updateDB(abId);
-		return "redirect:addrbook_edit_form.do";
+	public String update(AddrBookVO vo) throws Exception {
+		dao.updateDB(vo);
+		return "redirect:addrbook_list.do";
 	}
 
 }
